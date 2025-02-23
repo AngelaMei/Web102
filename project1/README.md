@@ -1,4 +1,4 @@
-# Web Development Project 1 - *Name of App Here*
+# Web Development Project 1 - *Nature Wonders around Las Vegas*
 
 Submitted by: **Yu-Chi Mei**
 
