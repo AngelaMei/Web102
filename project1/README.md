@@ -30,6 +30,6 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented required features:
 
-<img src='./public/walkthrough.gif' title='GIF Walkthrough' width='' alt='GIF Walkthrough' />
+<img src='./public/walkthrough2.gif' title='GIF Walkthrough' width='' alt='GIF Walkthrough' />
 
 GIF created with [Ezgif](https://ezgif.com/maker)
