@@ -1,0 +1,304 @@
+[
+    {
+      "breeds": [
+        {
+          "weight": {
+            "imperial": "35 - 70",
+            "metric": "16 - 32"
+          },
+          "height": {
+            "imperial": "24 - 27",
+            "metric": "61 - 69"
+          },
+          "id": 134,
+          "name": "Irish Setter",
+          "bred_for": "Bird setting, retrieving",
+          "breed_group": "Sporting",
+          "life_span": "10 - 11 years",
+          "temperament": "Affectionate, Energetic, Lively, Independent, Playful, Companionable",
+          "reference_image_id": "S1osGeqVm"
+        }
+      ],
+      "id": "S1osGeqVm",
+      "url": "https://cdn2.thedogapi.com/images/S1osGeqVm_1280.jpg",
+      "width": 818,
+      "height": 522
+    },
+    {
+      "breeds": [
+        {
+          "weight": {
+            "imperial": "90 - 120",
+            "metric": "41 - 54"
+          },
+          "height": {
+            "imperial": "28 - 34",
+            "metric": "71 - 86"
+          },
+          "id": 5,
+          "name": "Akbash Dog",
+          "bred_for": "Sheep guarding",
+          "breed_group": "Working",
+          "life_span": "10 - 12 years",
+          "temperament": "Loyal, Independent, Intelligent, Brave",
+          "origin": "",
+          "reference_image_id": "26pHT3Qk7"
+        }
+      ],
+      "id": "QIZB_XEt5",
+      "url": "https://cdn2.thedogapi.com/images/QIZB_XEt5.jpg",
+      "width": 1600,
+      "height": 1119
+    },
+    {
+        "breeds": [
+          {
+            "weight": {
+              "imperial": "44 - 62",
+              "metric": "20 - 28"
+            },
+            "height": {
+              "imperial": "17 - 20",
+              "metric": "43 - 51"
+            },
+            "id": 21,
+            "name": "Australian Cattle Dog",
+            "country_code": "AU",
+            "bred_for": "Cattle herding, herding trials",
+            "breed_group": "Herding",
+            "life_span": "12 - 14 years",
+            "temperament": "Cautious, Energetic, Loyal, Obedient, Protective, Brave",
+            "reference_image_id": "IBkYVm4v1"
+          }
+        ],
+        "id": "ZxP-viFTK",
+        "url": "https://cdn2.thedogapi.com/images/ZxP-viFTK.jpg",
+        "width": 1080,
+        "height": 1350
+      },
+      {
+        "breeds": [
+          {
+            "weight": {
+              "imperial": "45 - 55",
+              "metric": "20 - 25"
+            },
+            "height": {
+              "imperial": "20 - 22",
+              "metric": "51 - 56"
+            },
+            "id": 32,
+            "name": "Bearded Collie",
+            "bred_for": "Sheep herding",
+            "breed_group": "Herding",
+            "life_span": "12 - 14 years",
+            "temperament": "Self-confidence, Hardy, Lively, Alert, Intelligent, Active",
+            "reference_image_id": "A09F4c1qP"
+          }
+        ],
+        "id": "_q5yhP_X_",
+        "url": "https://cdn2.thedogapi.com/images/_q5yhP_X_.jpg",
+        "width": 1080,
+        "height": 1080
+      },
+      {
+        "breeds": [
+          {
+            "weight": {
+              "imperial": "55 - 80",
+              "metric": "25 - 36"
+            },
+            "height": {
+              "imperial": "21 - 26",
+              "metric": "53 - 66"
+            },
+            "id": 76,
+            "name": "Chesapeake Bay Retriever",
+            "bred_for": "Water Retriever",
+            "breed_group": "Sporting",
+            "life_span": "10 - 13 years",
+            "temperament": "Affectionate, Intelligent, Quiet, Dominant, Happy, Protective",
+            "reference_image_id": "9BXwUeCc2"
+          }
+        ],
+        "id": "dBrrpEGm4",
+        "url": "https://cdn2.thedogapi.com/images/dBrrpEGm4.jpg",
+        "width": 1080,
+        "height": 1080
+      },
+      {
+        "breeds": [
+          {
+            "weight": {
+              "imperial": "23 - 28",
+              "metric": "10 - 13"
+            },
+            "height": {
+              "imperial": "15.5 - 20",
+              "metric": "39 - 51"
+            },
+            "id": 111,
+            "name": "Finnish Spitz",
+            "bred_for": "Hunting birds, small mammals",
+            "breed_group": "Non-Sporting",
+            "life_span": "12 - 15 years",
+            "temperament": "Playful, Loyal, Independent, Intelligent, Happy, Vocal",
+            "reference_image_id": "3PjHlQbkV"
+          }
+        ],
+        "id": "buxVXCo9V",
+        "url": "https://cdn2.thedogapi.com/images/buxVXCo9V.jpg",
+        "width": 500,
+        "height": 313
+      },
+      {
+        "breeds": [
+          {
+            "weight": {
+              "imperial": "20 - 24",
+              "metric": "9 - 11"
+            },
+            "height": {
+              "imperial": "14 - 17",
+              "metric": "36 - 43"
+            },
+            "id": 246,
+            "name": "Tibetan Terrier",
+            "bred_for": "Good luck charms, mascots, watchdogs, herding dogs, and companions",
+            "breed_group": "Non-Sporting",
+            "life_span": "12 - 15 years",
+            "temperament": "Affectionate, Energetic, Amiable, Reserved, Gentle, Sensitive",
+            "reference_image_id": "6f5n_42mB"
+          }
+        ],
+        "id": "1SMdT_hVW",
+        "url": "https://cdn2.thedogapi.com/images/1SMdT_hVW.jpg",
+        "width": 1080,
+        "height": 1080
+      },
+      {
+        "breeds": [
+          {
+            "weight": {
+              "imperial": "65 - 115",
+              "metric": "29 - 52"
+            },
+            "height": {
+              "imperial": "24 - 28",
+              "metric": "61 - 71"
+            },
+            "id": 6,
+            "name": "Akita",
+            "bred_for": "Hunting bears",
+            "breed_group": "Working",
+            "life_span": "10 - 14 years",
+            "temperament": "Docile, Alert, Responsive, Dignified, Composed, Friendly, Receptive, Faithful, Courageous",
+            "reference_image_id": "BFRYBufpm"
+          }
+        ],
+        "id": "36TXlWMDf",
+        "url": "https://cdn2.thedogapi.com/images/36TXlWMDf.jpg",
+        "width": 1373,
+        "height": 1033
+      },
+      {
+        "breeds": [
+          {
+            "weight": {
+              "imperial": "45 - 55",
+              "metric": "20 - 25"
+            },
+            "height": {
+              "imperial": "20 - 22",
+              "metric": "51 - 56"
+            },
+            "id": 32,
+            "name": "Bearded Collie",
+            "bred_for": "Sheep herding",
+            "breed_group": "Herding",
+            "life_span": "12 - 14 years",
+            "temperament": "Self-confidence, Hardy, Lively, Alert, Intelligent, Active",
+            "reference_image_id": "A09F4c1qP"
+          }
+        ],
+        "id": "ssY_amKgW",
+        "url": "https://cdn2.thedogapi.com/images/ssY_amKgW.jpg",
+        "width": 1280,
+        "height": 1280
+      },
+      {
+        "breeds": [
+          {
+            "weight": {
+              "imperial": "23 - 28",
+              "metric": "10 - 13"
+            },
+            "height": {
+              "imperial": "15.5 - 20",
+              "metric": "39 - 51"
+            },
+            "id": 111,
+            "name": "Finnish Spitz",
+            "bred_for": "Hunting birds, small mammals",
+            "breed_group": "Non-Sporting",
+            "life_span": "12 - 15 years",
+            "temperament": "Playful, Loyal, Independent, Intelligent, Happy, Vocal",
+            "reference_image_id": "3PjHlQbkV"
+          }
+        ],
+        "id": "tUDJdHuO7",
+        "url": "https://cdn2.thedogapi.com/images/tUDJdHuO7.jpg",
+        "width": 1280,
+        "height": 1599
+      },
+      {
+        "breeds": [
+          {
+            "weight": {
+              "imperial": "130 - 180",
+              "metric": "59 - 82"
+            },
+            "height": {
+              "imperial": "25.5 - 27.5",
+              "metric": "65 - 70"
+            },
+            "id": 212,
+            "name": "Saint Bernard",
+            "bred_for": "Draft, search, rescue",
+            "breed_group": "Working",
+            "life_span": "7 - 10 years",
+            "temperament": "Friendly, Lively, Gentle, Watchful, Calm",
+            "reference_image_id": "_Qf9nfRzL"
+          }
+        ],
+        "id": "AQN0VFXV0",
+        "url": "https://cdn2.thedogapi.com/images/AQN0VFXV0.jpg",
+        "width": 1080,
+        "height": 1346
+      },
+      {
+        "breeds": [
+          {
+            "weight": {
+              "imperial": "30 - 50",
+              "metric": "14 - 23"
+            },
+            "height": {
+              "imperial": "17.5 - 19.5",
+              "metric": "44 - 50"
+            },
+            "id": 239,
+            "name": "Standard Schnauzer",
+            "bred_for": "Ratting, guarding",
+            "breed_group": "Working",
+            "life_span": "13 - 15 years",
+            "temperament": "Trainable, Good-natured, Devoted, Lively, Playful, Intelligent",
+            "reference_image_id": "tmzeu6ID_"
+          }
+        ],
+        "id": "dtz9b2Lrz",
+        "url": "https://cdn2.thedogapi.com/images/dtz9b2Lrz.jpg",
+        "width": 1275,
+        "height": 1920
+      }
+    ]
