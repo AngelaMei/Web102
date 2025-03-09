@@ -5,6 +5,7 @@ This repository contains the projects completed for the Web102 course at Codepat
 ## Table of Contents
 
 - [Class 1: React Components](#class-1)
+- [Class 2: State](#class-2)
 
 
 ## Class 1
@@ -54,6 +55,19 @@ function Child(props) {
 }
 ```
 
+**Code Expression**
+
+What is this
+
+```javascript
+{props.progress === 'Project' ? 'Project' : ''}
+```
+1. ```props.progress```: This accesses a prop (short for property) passed to the React component.  Props are a way to send data from a parent component to a child component.
+2. Condition: ``` === 'Project' ?```
+* If True: ```'Project'``` (The expression evaluates to the string 'Project')
+* If False: ```''``` (The expression evaluates to an empty string)
+
+
 
 ### ➡️ Lab 1 - Timetable
 
@@ -64,3 +78,31 @@ function Child(props) {
 3.  Follow the prompts to configure your project.
 
 ### ➡️ Project 1 - Community Board
+
+## Class 2
+
+**Slide Link:** [Class 2 Slides](https://docs.google.com/presentation/d/1oykq3FKH869pek56gF-Cj3vP_4XL_8GIsJejtPfd_To/edit#slide=id.gfee031c7e2_0_1760)
+
+### What is State?
+「state」（狀態）是指元件內部用來儲存和管理資料的物件。這些資料會影響元件的渲染結果，而且當 state 改變時，React 會自動重新渲染元件，以反映最新的資料。
+
+State refers to a component’s memory: the variables that persist across renders of the component.
+
+#### When to use?
+* When you need to retain information between renders of a component
+* When you need to display the updated information to the user
+
+#### What is a Hook?
+A hook is a special function that allows you to use state and lifecycle features for components.
+* Don’t call Hooks inside loops, conditionals, or nested functions
+* Only call hooks from inside React functions
+
+#### How to use?
+```javascript
+import { useState } from ‘react’;
+const [index, setindex] = useState(0);
+```
+
+### ➡️ Lab 2 - Samosa Selector
+
+### ➡️ Project 2 - Flashcards
