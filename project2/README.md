@@ -1,3 +1,32 @@
+# Web Development Project 2 Extended - *Guess Dog Breed*
+
+Submitted by: **Yu-Chi Mei**
+
+This web app: **FlashCard showing Dogs' images and their Breed**
+
+Time spent: **4** hours spent in total
+
+## Required Features
+
+- [x] User Input
+- [x] Moving Multiple Ways in the Card List
+
+## Stretch Features
+
+- [x] A shuffle button can be used to randomize the order of the cards
+- [x] A user’s answer may be counted as correct even when it is slightly different from the target answer
+- [x] A counter displays the user’s current and longest streak of correct responses
+- [ ] A user can mark a card that they have mastered and have it removed from the pool of answers as well as added to a list of mastered cards
+
+## Video Walkthrough
+
+Here's a walkthrough of implemented required features:
+
+<img src='./public/walkthrough2.gif' title='GIF Walkthrough' width='' alt='GIF Walkthrough' />
+
+GIF created with [Ezgif](https://ezgif.com/maker)
+
+
 # Web Development Project 2 - *Flashcard for Dog Breed*
 
 Submitted by: **Yu-Chi Mei**

@@ -95,3 +95,29 @@ button:disabled{
   position: absolute;
   z-index: 0;
 }
+
+.answer-form{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+input{
+  width: 200px;
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid #303030;
+  padding-left: 10px;
+}
+
+.submit-button{
+  display: flex;
+  min-height: 30px;
+  border-radius: 5px;
+  border: 1px solid #303030;
+  background-color: #6043c1;
+  color: white;
+  margin-bottom: 30px;
+}
