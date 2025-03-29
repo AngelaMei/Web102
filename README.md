@@ -6,7 +6,9 @@ This repository contains the projects completed for the Web102 course at Codepat
 
 - [Class 1: React Components](#class-1)
 - [Class 2: State](#class-2)
-
+- [Class 3: Form](#class-3)
+- [Class 4: Career Workshop](#class-4)
+- [Class 5: Conditional Rendering & useEffect](#class-5)
 
 ## Class 1
 
@@ -106,3 +108,161 @@ const [index, setindex] = useState(0);
 ### ➡️ Lab 2 - Samosa Selector
 
 ### ➡️ Project 2 - Flashcards
+
+## Class 3
+
+**Slide Link:** [Class 3 Slides](https://docs.google.com/presentation/d/1hiW4KHZAuyA8Ri66VE9vhh-MyRUREEvdXJLfT-wIPV0/edit?slide=id.g168a72c062d_0_407#slide=id.g168a72c062d_0_407)
+
+### Controlled Components
+Controlled components are a fundamental concept in React for managing form inputs. They provide a way to have React's state be the "single source of truth" for form data.
+
+#### What are Controlled Components?
+
+In a controlled component, the value of a form element (like `<input>`, `<textarea>`, `<select>`) is controlled by React's state. When the user interacts with the form element, an event handler updates the state, and React re-renders the component to reflect the new value.
+
+This is different from uncontrolled components, where the form element manages its own state internally.
+
+```Javascript  
+<form onSubmit={handleSubmit}>
+  <label>
+    Username:
+    <input
+      type="text"
+      name="username"
+      value={formData.username}
+      onChange={handleChange}
+    />
+  </label>
+</form>
+```
+
+### Arrays, Objects, and useState
+
+#### With Array
+When working with arrays in useState, do not modify the array directly. Instead, create a new array with the desired changes.
+
+```javascript
+const [items, setItems] = useState([]);
+
+const addItem = (newItem) => {
+  setItems([...items, newItem]); // Create a new array with the new item
+};
+```
+
+#### With Objects
+Similar to arrays, do not modify objects directly. Create a new object with the updated properties.
+
+```javascript
+const [user, setUser] = useState({ name: 'John', age: 30 });
+
+const updateAge = (newAge) => {
+  setUser({ ...user, age: newAge }); // Create a new object with updated age
+};
+```
+
+## Class 4
+
+Career Workshop
+
+## Class 5
+
+### HTTP Request
+
+| Method | Purpose | Data Location | Idempotent | Cachable |
+| :----- | :------ | :------------ | :--------- | :------- |
+| GET    | Retrieve data | URL (query params) | Yes | Yes |
+| POST   | Submit data for processing | Request body | No | No |
+| PUT    | Replace resource | Request body | Yes | No |
+| DELETE | Delete resource | (Often URL) | Yes | No |
+
+### Promise
+The Promise is Created: When you ask JavaScript to do something that takes time, it gives you a "promise" object.
+
+The Promise Has Three States
+* Pending
+* Fulfilled (Resolved)
+* Rejected
+
+![Async vs sync](/cap/public/async.png)
+
+#### Fetch + then
+
+```Javascript
+fetch(URL)
+  .then((response) => response.json()).then((data) => { // If Success
+  .catch() // For Error Handling
+});
+```
+
+#### Asyn + Await
+Async and await are special keywords in JavaScript that make working with promises even easier and cleaner.
+
+* **Cleaner and more readable code:** Async/await makes asynchronous code look like synchronous code, making it easier to follow the flow of execution.   
+* **Improved error handling:** Using try...catch blocks simplifies error handling in asynchronous code.
+
+
+```Javascript
+async function fetchData() {
+  try {
+    const response = await fetch('https://api.example.com/data');
+    const data = await response.json();
+    console.log('Got the data:', data);
+    return data; // Return the data as a promise.
+  } catch (error) {
+    console.error('Oops, something went wrong:', error);
+    throw error; // Re-throw the error, so the caller knows it failed.
+  }
+}
+```
+
+#### Axios Library
+For making HTTP requests, Axios is a helpful library that makes it simpler.
+
+```command
+$  npm install axios
+```
+
+```Javascript
+import axios from 'axios';
+
+async function fetchData() {
+  try {
+    const response = await axios.get('https://api.example.com/data');
+    console.log(response.data);
+    return response.data;
+  } catch (error) {
+    console.error('Error fetching data:', error);
+    throw error;
+  }
+}
+```
+
+### Conditional Rendering & useEffect
+
+#### useEffect
+UseEffect is a React hook that lets you perform "side effects" in functional components.
+
+* Fetching data from an API.
+* Setting up subscriptions.
+* Directly manipulating the DOM.
+* setting up timers.
+
+Using UseEffect to avoid infinite loop.
+
+```Javascript
+  useEffect(() => {
+    axios.get('https://api.example.com/data')
+      .then(response => {
+        setData(response.data);
+        setIsLoading(false);
+      })
+      .catch(error => {
+        console.error('Error fetching data:', error);
+        setIsLoading(false);
+      });
+  }, []); // Empty dependency array means this effect runs only once
+```
+
+#### URL Parameter
+
+* window.location.search

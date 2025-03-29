@@ -1,7 +1,7 @@
 import React from 'react'
 import './App.css'
 import headerImage from '/headerimage.png';
-import  Card  from './components/card'
+import  Card  from './components/card';
 // import Navigation from './components/Navigation'
 
 function App() {
