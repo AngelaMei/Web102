@@ -1,0 +1,118 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.grid-4{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-auto-flow: column;
+  gap: 1em;
+}
+
+.grid-2{
+  display: grid;
+  grid-column: span 3;
+  gap: 1em;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.buttonwrapper {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  margin: 2em 0;
+}
+
+.banlist {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  justify-content: start;
+  gap: 1em;
+  padding: 2em;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: top;
+  max-width: 800px;
+  margin: 0 auto;
+  gap: 1em;
+}
+
+.container img {
+  max-width: 400px;
+}
+
+.mainbutton {
+  border-radius: 0.5em;
+  background-color: #2a36a7;
+  color: white;
+  cursor: pointer;
+}
+
+.banned {
+  background-color: #c70e45;
+  color: white;
+  gap: 1em;
+}
+
+.prev-artworks {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  justify-content: start;
+  gap: 10px;
+  padding: 2em;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+}
+
+.prev-artwork-image {
+  width: 100%;
+  height: auto;
+}
