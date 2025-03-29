@@ -40,6 +40,6 @@ Time spent: **5** hours spent in total
 
 Here's a walkthrough of implemented required features:
 
-<img src='./walkthrough.gif' title='GIF Walkthrough' width='' alt='GIF Walkthrough' />
+<img src='./public/walkthrough.gif' title='GIF Walkthrough' width='' alt='GIF Walkthrough' />
 
 GIF created with [Ezgif](https://ezgif.com/maker)
