@@ -9,6 +9,7 @@ This repository contains the projects completed for the Web102 course at Codepat
 - [Class 3: Form](#class-3)
 - [Class 4: Career Workshop](#class-4)
 - [Class 5: Conditional Rendering & useEffect](#class-5)
+- [Class 6: ](#class-6)
 
 ## Class 1
 
@@ -266,3 +267,58 @@ Using UseEffect to avoid infinite loop.
 #### URL Parameter
 
 * window.location.search
+
+
+## Class 6
+
+### Component Life Cycle
+Now we use UseEffect instead of React component cycle.
+
+- Mount: Add the component to screen
+  - componentDidMount(): E.g. Connect to API
+- Update: updated via changes in props or state
+  - componentDidUpdate(): E.g. Update API with new Info
+- Unmount: Removed
+  - componentWillMount(): E.g. Disconnect API
+
+### Filter
+- It creates a new array.
+- It iterates through each element of the original array.
+- It applies a "test" (a function you provide) to each element.
+- If the test returns `true`, the element is included in the new array.
+- If the test returns `false`, the element is skipped.
+
+```Javascript
+const products = [
+  { name: 'Laptop', price: 1200 },
+  { name: 'Phone', price: 800 },
+  { name: 'Tablet', price: 300 },
+  { name: 'Headphones', price: 150 },
+];
+
+const expensiveProducts = products.filter(product => product.price > 500);
+
+console.log(expensiveProducts);
+// Output:
+// [
+//   { name: 'Laptop', price: 1200 },
+//   { name: 'Phone', price: 800 }
+// ]
+```
+
+### Map
+- It creates a new array by transforming each element of the original array.   
+- It applies a function (a "callback function") that you provide to each element.   
+- It returns a new array containing the results of applying the callback function to each element.
+
+```Javascript
+const products = [
+  { name: 'Laptop', price: 1200 },
+  { name: 'Phone', price: 800 },
+  { name: 'Tablet', price: 300 },
+];
+
+const productNames = products.map(product => product.name);
+
+console.log(productNames); // Output: ["Laptop", "Phone", "Tablet"]
+```
