@@ -1,0 +1,144 @@
+#root {
+  max-width: 1280px;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.column-2 {
+  display: flex;
+}
+
+.sidebar {
+  position: fixed; /* Keep it fixed */
+  height: 100vh;
+  padding: 2em;
+  background: #f0f0f0;
+  width: 200px; /* Adjust width as needed */
+}
+
+.sidebar li {
+  list-style: none;
+  padding-bottom: 1em;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: #974ef0;
+  font-size: 1.2em; /* Adjust font size */
+}
+
+.sidebar a:hover {
+  color: #3d429f;
+}
+
+.container {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 2em;
+  align-items: center;
+  margin-left: 300px; /* Match sidebar width */
+  height: 100vh; /* make the container take up the full view height */
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1em;
+  gap: 1em;
+}
+
+.movie-card {
+  display: flex;
+  border: 1px solid #ddd; /* Optional: Adds a border for visual separation */
+  margin-bottom: 20px; /* Optional: Adds space between cards */
+  padding: 15px;
+  border-radius: 8px; /* Optional: Rounded corners */
+  min-width: 250px;
+  min-height: 220px;
+}
+
+.movie-card img {
+  width: 400px; /* Adjust image width as needed */
+  height: auto;
+  margin-right: 20px; /* Space between image and text */
+  object-fit: cover;
+  border-radius: 8px; /* Optional: Rounded corners for image */
+}
+
+.movie-card-content {
+  flex-grow: 1; /* Allows the right side to take up remaining space */
+  display: flex;
+  flex-direction: column;
+}
+
+.movie-card-title {
+  font-size: 1.5em; /* Adjust title font size */
+  margin-bottom: 5px;
+}
+
+.movie-card-overview {
+  margin-bottom: 10px;
+}
+
+.movie-card-release-date {
+  font-size: 0.8em; /* Smaller font for release date */
+  color: #888; /* Optional: Gray color for release date */
+  margin-top: auto; /* Push release date to the bottom */
+}
+
+.movie-card-score {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input{
+  min-width: 200px;
+  max-width: 500px;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.rangeSlider {
+  width: 100%;
+  margin: 20px;
+  display: flex;
+  align-items: start;
+  gap: 10px;
+}
+
+input[type="range"] {
+  padding: 0px;
