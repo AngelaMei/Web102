@@ -1,10 +1,23 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import './index.css'
 import App from './App.jsx'
+import Layout from '../routes/Layout';
+import MovieDetails from '../routes/MovieDetailPage';
+import Notfound from '../routes/Notfound';
+
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <App />
-  </StrictMode>,
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index={true} path="/home" element={<App />} />
+          <Route index={false} path="/movieDetails/:id" element={<MovieDetails />}/>
+          <Route path="*" element={<Notfound />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
+  </StrictMode>
 )

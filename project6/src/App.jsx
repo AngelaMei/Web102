@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import './App.css'
 import MovieCard from './Components/MovieCard';
+import MovieChart from './Components/MovieChart';
 
 const API_KEY = import.meta.env.VITE_APP_API_KEY;
 
@@ -60,15 +61,8 @@ function App() {
 
   return (
     <>
-      <div className="column-2">
-        <div className="sidebar">
-          <h2>Dashboard</h2>
-          <li><a href="#">🔍 Search</a></li>
-          <li><a href="#">🔥 Popular</a></li>
-          <li><a href="#">👑 Top Rated</a></li>
-          <li><a href="#">🏃‍♂️ Upcoming</a></li>
-        </div>
-        <div className="container">
+    <div className='container-row'>
+        <div className="container-list">
         <h1>Popular Movie List on TMDB</h1>
         <div className="row">
           <input
@@ -178,6 +172,7 @@ function App() {
           } */}
         </ul>
       </div>
+      <MovieChart />
       </div>
     </>
   )

@@ -1,3 +1,39 @@
+# Web Development Project 6 Extended- *Movie Dashboard + Chart & Link*
+
+Submitted by: **Yu-Chi Mei**
+
+This web app: **Fetch the art data from** [TMDB](https://www.themoviedb.org/) 
+
+Time spent: **3** hours spent in total
+
+## Required Features
+- [x] Clicking on an item in the list view displays more details about it
+  - Clicking on an item in the dashboard list navigates to a detail view for that item
+  - Detail view includes extra information about the item not included in the dashboard view
+  - The same sidebar is displayed in detail view as in dashboard view
+
+- [x] Each detail view of an item has a direct, unique URL link to that item’s detail view page
+
+- [x] The app includes at least two unique charts developed using the fetched data that tell an interesting story
+  - At least two charts should be incorporated into the dashboard view of the site
+  - Each chart should describe a different aspect of the dataset
+
+## Stretch Features
+- [x] The site’s customized dashboard contains more content that explains what is interesting about the data
+  - e.g., an additional description, graph annotation, suggestion for which filters to use, or an additional page that explains more about the data
+
+- [x] The site allows users to toggle between different data visualizations
+  - User should be able to use some mechanism to toggle between displaying and hiding visualizations
+
+## Video Walkthrough
+
+Here's a walkthrough of implemented required features:
+
+<img src='./public/walkthrough2.gif' title='GIF Walkthrough' width='' alt='GIF Walkthrough' />
+
+GIF created with [Ezgif](https://ezgif.com/maker)
+
+
 # Web Development Project 6 - *Movie Dashboard*
 
 Submitted by: **Yu-Chi Mei**
