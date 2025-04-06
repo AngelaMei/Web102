@@ -9,7 +9,8 @@ This repository contains the projects completed for the Web102 course at Codepat
 - [Class 3: Form](#class-3)
 - [Class 4: Career Workshop](#class-4)
 - [Class 5: Conditional Rendering & useEffect](#class-5)
-- [Class 6: ](#class-6)
+- [Class 6: Component Life Cycle](#class-6)
+- [Class 7: React Router](#class-7)
 
 ## Class 1
 
@@ -321,4 +322,133 @@ const products = [
 const productNames = products.map(product => product.name);
 
 console.log(productNames); // Output: ["Laptop", "Phone", "Tablet"]
+```
+
+
+
+## Class 7
+
+### Why do we need React Router?
+we can use it for our navigation.
+React Router is a library that allows us to create single-page applications (SPAs) with client-side routing. This means that instead of the browser making a full request to the server for each page, React Router intercepts the URL changes and updates the UI dynamically, leading to a smoother and faster user experience.
+
+- install `npm install react-router-dom`
+```Javascript
+import { BrowserRouter, Routes, Route, Outlet, Link } from "react-router-dom";
+```
+
+- A `<Route>` component
+  - `<BrowserRouter>` : Will control the URL showing in our address bar as we navigate different pages in our app
+  - `<Routes>`: Will hold all of the different locations we want to navigate to
+  - `<Route>`: Where we define each relative path for our web app and what content we want showing there
+
+``` Javascript
+  <BrowserRouter>
+    <Routes>
+      <Route path='/' element={<App/>} />
+      <Route path='*' element={<About/>} /> {/* "*" matches any URL that doesn't match other routes */}
+    </Routes>
+  </BrowserRouter>
+```
+
+- `useRoutes()` hook: An alternative way to define routes.
+
+``` Javascript
+import ( useRoutes ) from "react-router";
+
+let element = useRoutes ([
+  {
+    path: "/"
+    element: <Home />
+  },
+  {
+    path: "/about"
+    element: <AboutPage />
+  },
+]);
+
+return element;
+```
+
+### Link Component
+`<Link>` is a component that provides declarative, accessible navigation around your application. It's used to create links that, when clicked, update the URL and render the associated component without a full page refresh. The to prop specifies the destination URL.
+
+`<Link to="/home"> Home </Link>`
+
+
+### Nested Route
+Nested routes allow you to create layouts and structures where components are rendered within other components based on the URL. This is useful for creating complex UIs with parent-child relationships.
+
+```Javascript
+createRoot(document.getElementById('root')).render(
+  <StrictMode>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index={true} path="/" element={<App />} />
+          <Route index={false} path="/coinDetails/:symbol" element={<DetailView />}/>
+          <Route path="*" element={<Notfound />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
+  </StrictMode>
+)
+```
+
+- `Layout` component acts as a parent, and its children routes are rendered inside it using the `<Outlet>` component (which needs to be inside the Layout component).
+- `index` route renders when the parent's path is matched exactly. 
+- Nested routes are relative to their parent.
+- `<Outlet>` is used inside the parent component to render the child route.
+
+```Javascript
+import { Outlet, Link } from "react-router-dom";
+
+function Layout() {
+  return (
+    <div>
+      <nav>
+        <Link to="/">Home</Link> | <Link to="/about">About</Link> | <Link to="/users">Users</Link>
+      </nav>
+      <Outlet /> {/* Child routes render here */}
+    </div>
+  );
+}
+```
+
+### Dynamic Routing and Adding Props
+Dynamic routing lets you create routes with parameters, like `/users/:userId`. 
+You can then access these parameters in your components. You can also pass props to components rendered by `<Route>`.
+
+- `useParams()` is used to access dynamic route parameters.
+- Props can be passed directly to the element prop of the `<Route>` component.
+
+#### Dynamic Routing
+Routing
+```Javascript
+  <Route path="/users/:userId" element={<UserDetails />} />
+```
+
+Component
+```Javascript
+  import { useParams } from "react-router-dom";
+
+  function UserDetails() {
+    let { userId } = useParams();
+    return <div>User ID: {userId}</div>;
+  }
+```
+
+#### Adding Props
+Routing
+```Javascript
+  <Route path="/profile" element={<Profile username="JohnDoe" />} />
+```
+
+Component
+```Javascript
+  function Profile({ username }) {
+  return <div>Username: {username}</div>;
+}
+
+//You pass props directly to the component specified in the element prop of the <Route> component.
 ```
