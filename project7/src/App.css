@@ -1,0 +1,61 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+  gap: 20px;
+  overflow-y: auto;
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.Card {
+  backdrop-filter: blur(2px);
+  border: 1px solid rgba(153, 153, 153, 0.497);
+  border-radius: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 10px;
+  margin-bottom: 25px;
+  width: 400px;
+  text-align: center;
+}
+
+.Card button{
+  margin: 10px;
+  background-color: rgb(1, 97, 181);
+  color: black;
+}
+
+.Card button a{
+  margin: 10px;
+  color: rgb(255, 255, 255);
+}
+
+.Card img{
+  width: 200px;
+}

@@ -1,0 +1,64 @@
+.layout {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  padding-top: 56px; /* Adjust to match nav height */
+  flex-grow: 1; /* Allow main content to take remaining vertical space */
+}
+  
+nav {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  background-color: #333; /* Dark background for the nav */
+  color: #f2f2f2; /* Light text color for nav links */
+  padding: 1em 0; /* Vertical padding for the nav bar */
+  box-sizing: border-box;
+  border-radius: 99px;
+}
+  
+nav ul {
+  list-style: none; /* Remove bullet points from the list */
+  padding: 0;
+  margin: 0;
+  display: flex; /* Arrange list items horizontally */
+  gap: 1em; /* Space between the list items */
+  justify-content: center; /* Center the links horizontally */
+}
+
+nav li a {
+  display: block; /* Make the entire link area clickable */
+  color: #f2f2f2;
+  text-decoration: none; /* Remove underlines from links */
+  padding: 0.5em 1em; /* Padding around the link text */
+  border-radius: 5px; /* Optional: Rounded corners for the links */
+}
+
+nav li a:hover {
+  color: orange;
+}
+
+.home-link a {
+  font-weight: bold;
+}
+
+/* Responsive adjustments (optional) */
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column; /* Stack links vertically on smaller screens */
+    align-items: center; /* Center links horizontally */
+  }
+
+  nav li {
+    width: 100%; /* Make each list item take full width */
+    text-align: center; /* Center text within list item */
+    margin-bottom: 0.5em; /* Add some space below each link */
+  }
+
+  nav li a {
+    width: 100%; /* Make the link full width */
+  }
+}
