@@ -18,7 +18,7 @@ const EditPost = () => {
     const fetchPost = async () => {
       const { data, error } = await supabase
         .from("Posts")
-        .select("title, author, description")
+        .select("title, author, description, userId")
         .eq("id", id)
         .single();
 
@@ -43,8 +43,9 @@ const EditPost = () => {
   const updatePost = async (e) => {
     e.preventDefault();
 
-    if (localStorage.getItem('userId') !== post.user_id) {
+    if (localStorage.getItem('userId') !== post.userId) {
       alert('You are not allowed to edit/delete this post.');
+      console.log(post.userId)
       return;
     }
 
@@ -57,7 +58,7 @@ const EditPost = () => {
       })
       .eq("id", id);
 
-    window.location = "/";
+    window.location = `/detail/${id}`;
   };
 
   return (

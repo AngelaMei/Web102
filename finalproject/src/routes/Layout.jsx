@@ -11,7 +11,7 @@ const Layout = () => {
     return (
         <div className="layout">
             <div className="topnav">
-                <img src="./logo.svg" alt="logo" />
+                <img src="/logo.svg" alt="logo" />
                 <nav>
                     <ul>
                         <li

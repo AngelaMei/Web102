@@ -129,17 +129,27 @@ function PostDetail() {
   const deletePost = async (e) => {
     e.preventDefault();
 
-    if (localStorage.getItem('userId') !== post.user_id) {
+    if (localStorage.getItem('userId') !== post.userId) {
       alert('You are not allowed to edit/delete this post.');
       return;
     }
+
+    await supabase
+      .from("Discussion")
+      .delete()
+      .eq("id", id);
 
     await supabase
       .from("Posts")
       .delete()
       .eq("id", id);
 
-    window.location = "/";
+      if (error) {
+        console.error("Error deleting post:", error);
+        alert("Failed to delete post.");
+      } else {
+        window.location = "/";
+      }
   };
   
   return (
