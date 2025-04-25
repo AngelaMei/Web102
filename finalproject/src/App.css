@@ -1,0 +1,51 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.card-slider{
+  display: flex;
+  justify-content: start;
+  gap: 20px;
+  max-width: 1280px;
+  overflow: hidden;
+  overflow-x: auto;
+  gap: 20px;
+  padding: 2em;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+}
+
+.card-slider::-webkit-scrollbar {
+  display: none; /* Hide scrollbar for clean UI */
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.section{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  text-align: start;
+}
+
+.all-posts{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  gap: 20px;
+  max-width: 1280px;
+  gap: 20px;
+  padding: 2em;
+}
+
+.sort-chips {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 1rem;
+}

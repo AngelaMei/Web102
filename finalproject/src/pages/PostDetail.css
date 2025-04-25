@@ -1,0 +1,57 @@
+.post-detail{
+  background-color: white;
+  border-radius: 20px;
+  padding: 2em;
+  text-align: start;
+}
+
+.description{
+  padding: 3em  0 5em 0.5em ;
+}
+
+.series{
+  font-weight: 600;
+}
+
+.tool-bar{
+  display: flex;
+  flex-direction: row;
+  gap: 1.5em;
+  padding: 1em 0 1em 0;
+  text-align: center;
+  font-size: 24px;
+  align-items: center;
+}
+
+.tool-bar button:hover{
+  transform: translateY(-2px);
+}
+
+.like{
+  display: flex;
+  flex-direction: row;
+  gap: 0.5em;
+  text-align: center;
+  align-content: center;
+}
+
+.like:hover{
+  transform: translateY(-2px);
+}
+
+.likes{
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+  text-align: right;
+  flex-grow: 1;
+  align-items: center;
+}
+
+.tools{
+  display: flex;
+  flex-direction: row;
+  gap: 0.5em;
+  align-items: center;
+  margin-top: 0px;
+}

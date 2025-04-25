@@ -1,0 +1,53 @@
+.Card {
+    backdrop-filter: blur(2px);
+    padding-right: 10px;
+    margin-bottom: 25px;
+    width: 350px;
+    text-align: start;
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+}
+
+.card-content {
+  padding: 0.5em;
+}
+
+.card-content h3, h4, p{
+  padding: 0;
+  margin: 0;
+}
+
+.author{
+  display: flex;
+  flex-direction: row;
+  gap: 0.5em;
+  margin-top: 1em;
+  align-items: center;
+}
+
+.Card a{
+  text-decoration: none;
+  color: var(--main-text-color);
+}
+
+.Card:hover{
+  border-radius: 20px;
+}
+
+.Card img{
+  width: 350px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.time{
+  color: #7d7d7d;
+}
+
+.feedback{
+  background-color: var(--secondary-bg-color);
+  border-radius: 10px;
+  padding: 1em;
+  margin: 2em 0 2em 0;
+}
