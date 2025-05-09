@@ -13,6 +13,11 @@ This repository contains the projects completed for the Web102 course at Codepat
 - [Class 7: React Router](#class-7)
 - [Class 8: HTTP Request & Supabase](#class-8)
 
+## Quick Command
+- Create new project: `npm create vite@latest`
+- Axios api helper: `$  npm install axios`
+- React Router:  `npm install react-router-dom`
+- Supabase: `$  npm install @supabase/supabase-js`
 
 ## Class 1
 
@@ -73,17 +78,18 @@ What is this
 * If True: ```'Project'``` (The expression evaluates to the string 'Project')
 * If False: ```''``` (The expression evaluates to an empty string)
 
-
-
-### ➡️ Lab 1 - Timetable
-
-**Creating a New React Project:**
+### Creating a New React Project:
 
 1.  Open your terminal.
 2.  Run the command: `npm create vite@latest`
 3.  Follow the prompts to configure your project.
 
-### ➡️ Project 1 - Community Board
+
+### Assignment
+
+➡️ Lab 1 - Timetable
+
+➡️ Project 1 - Community Board
 
 ## Class 2
 
@@ -109,9 +115,12 @@ import { useState } from ‘react’;
 const [index, setindex] = useState(0);
 ```
 
-### ➡️ Lab 2 - Samosa Selector
+### Assignment
 
-### ➡️ Project 2 - Flashcards
+➡️ Lab 2 - Samosa Selector
+
+➡️ Project 2 - Flashcards
+
 
 ## Class 3
 
@@ -163,6 +172,12 @@ const updateAge = (newAge) => {
   setUser({ ...user, age: newAge }); // Create a new object with updated age
 };
 ```
+
+### Assignment
+
+➡️ Lab 3 - On My Grind
+
+➡️ Project 2+ - Flashcards Pro
 
 ## Class 4
 
@@ -272,6 +287,13 @@ Using UseEffect to avoid infinite loop.
 * window.location.search
 
 
+### Assignment
+
+➡️ Lab 5 - Cap! (Screenshot)
+
+➡️ Project 5 - Artwork
+
+
 ## Class 6
 
 ### Component Life Cycle
@@ -326,6 +348,11 @@ const productNames = products.map(product => product.name);
 console.log(productNames); // Output: ["Laptop", "Phone", "Tablet"]
 ```
 
+### Assignment
+
+➡️ Lab 6 - Crypto Hustle Lite
+
+➡️ Project 6 - Movie Data Dashboard
 
 
 ## Class 7
@@ -455,6 +482,13 @@ Component
 //You pass props directly to the component specified in the element prop of the <Route> component.
 ```
 
+### Assignment
+
+➡️ Lab 7 - Crypto Hustle Pro
+
+➡️ Project 6+ - Movie Data Dashboard Pro
+
+
 ## Class 8
 
 ### HTTP Request: What is CRUD?
@@ -513,4 +547,8 @@ const { data, error } = await supabase
   • single();
 ```
 
-## Class 9
+### Assignment
+
+➡️ Lab 8 - Bet
+
+➡️ Project 7 - Crewmates Mario
