@@ -185,6 +185,9 @@ Career Workshop
 
 ## Class 5
 
+**Slide Link:** [Class 5 Slides](https://docs.google.com/presentation/d/1YjiZ8gq_ZPOnIY5AcU-Yt-zBfAYlfS-rj7avslI4Pps/edit)
+
+
 ### HTTP Request
 
 | Method | Purpose | Data Location | Idempotent | Cachable |
@@ -296,6 +299,8 @@ Using UseEffect to avoid infinite loop.
 
 ## Class 6
 
+**Slide Link:** [Class 6 Slides](https://docs.google.com/presentation/d/1osF3Ak0O2CH3i1WHXLsQ6fCWZZ2v4FJ9Iql4BQdmEWM/edit?slide=id.g3461758b1dd_0_0#slide=id.g3461758b1dd_0_0)
+
 ### Component Life Cycle
 Now we use UseEffect instead of React component cycle.
 
@@ -356,6 +361,8 @@ console.log(productNames); // Output: ["Laptop", "Phone", "Tablet"]
 
 
 ## Class 7
+
+**Slide Link:** [Class 7 Slides](https://docs.google.com/presentation/d/1vbW5lzQo87M7109jxfsZN_PjPe54xRNmZcDDBQ9Lm6o/edit)
 
 ### Why do we need React Router?
 we can use it for our navigation.
@@ -490,6 +497,8 @@ Component
 
 
 ## Class 8
+
+**Slide Link:** [Class 8 Slides](https://docs.google.com/presentation/d/1vcd7CPiHhpZqv0AJ1Em1eJrmniylJP7kg1SZWBOobws/edit)
 
 ### HTTP Request: What is CRUD?
 CRUD refers to the 4 basic operations that software applications can perform.
