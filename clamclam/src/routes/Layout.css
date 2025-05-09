@@ -1,0 +1,77 @@
+.layout {
+  display: flex;
+  flex-direction: column;
+}
+
+.topnav{
+  display: flex;
+  flex-direction: row;
+  align-content: space-between;
+  align-items: center;
+  gap: 100px;
+  margin-bottom: 3em;
+}
+
+.topnav img{
+  height: 50px;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  background-color: var(--secondary-bg-color);
+  padding: 1em;
+  box-sizing: border-box;
+  border-radius: 99px;
+  flex-grow: 1;
+  
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 1em;
+  justify-content: center;
+}
+
+nav li {
+  display: flex;
+  align-items: center;
+  padding-left: 2em;
+}
+
+nav li a {
+  display: block;
+  font-weight: bold;
+  color: var(--main-text-color);
+  text-decoration: none; /* Remove underlines from links */
+  padding: 0.5em 1em; /* Padding around the link text */
+  border-radius: 5px; /* Optional: Rounded corners for the links */
+}
+
+nav li:hover, a:hover, .home-link.active {
+  color: var(--main-text-color);
+  background-color: var(--highlight-bg-color);
+  border-radius: 99px;
+}
+
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column; /* Stack links vertically on smaller screens */
+    align-items: center; /* Center links horizontally */
+  }
+
+  nav li {
+    width: 100%; /* Make each list item take full width */
+    text-align: center; /* Center text within list item */
+    margin-bottom: 0.5em; /* Add some space below each link */
+  }
+
+  nav li a {
+    width: 100%; /* Make the link full width */
+  }
+}
