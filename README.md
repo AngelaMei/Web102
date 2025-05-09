@@ -11,6 +11,8 @@ This repository contains the projects completed for the Web102 course at Codepat
 - [Class 5: Conditional Rendering & useEffect](#class-5)
 - [Class 6: Component Life Cycle](#class-6)
 - [Class 7: React Router](#class-7)
+- [Class 8: HTTP Request & Supabase](#class-8)
+
 
 ## Class 1
 
@@ -452,3 +454,63 @@ Component
 
 //You pass props directly to the component specified in the element prop of the <Route> component.
 ```
+
+## Class 8
+
+### HTTP Request: What is CRUD?
+CRUD refers to the 4 basic operations that software applications can perform.
+| HTTP Request | CURD |
+| -------- | ------- |
+| POST | Create: add new data |
+| GET | Read: retrieve, search, and view data |
+| PUT / PATCH | Update: edit data |
+| DELETE | Delete:  remove data |
+
+### HTTP Response Status Codes
+- Informational responses (100 – 199)
+- Successful responses (200 – 299)
+- Redirection messages (300 – 399)
+- Client error responses (400 – 499)
+- Server error responses (500 – 599)
+
+``` javascript
+axios.put('https://example.com/api/users/1', {
+        name: "John",
+        age: "25",
+        })
+      .then((response) => console.log(response))
+      .catch((error) => console.log(error))
+```
+
+### Supabase
+Supabase is an open-source Backend as a Service (BaaS) that is rapidly becoming popular among developers.
+
+- Step 1: Install Supabase
+``` command
+$  npm install @supabase/supabase-js
+```
+
+- Step 2: Initialize your Supabase client
+``` Javascript
+// client.jsx
+import { createClient } from '@supabase/supabase-js'
+
+const URL = 'API URL';
+const API_KEY = 'API KEY';
+
+export const supabase = createClient(URL, API_KEY);
+```
+
+- Step 3: Import & CURD the supabase using SQL
+``` Javascript
+import { supabase } from '../client'
+// Need to import in the files which you use Supabase
+
+const { data, error } = await supabase
+  from ("Book")
+  • select()
+  • eq("id", bookid)
+  • single();
+```
+
+## Class 9
