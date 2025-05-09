@@ -14,10 +14,10 @@ This repository contains the projects completed for the Web102 course at Codepat
 - [Class 8: HTTP Request & Supabase](#class-8)
 
 ## Quick Command
-- Create new project: `npm create vite@latest`
-- Axios api helper: `$  npm install axios`
-- React Router:  `npm install react-router-dom`
-- Supabase: `$  npm install @supabase/supabase-js`
+- Create new project: `$ npm create vite@latest`
+- Axios api helper: `$ npm install axios`
+- React Router:  `$ npm install react-router-dom`
+- Supabase: `$ npm install @supabase/supabase-js`
 
 ## Class 1
 
